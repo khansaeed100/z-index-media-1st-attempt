@@ -1,0 +1,113 @@
+
+.main-div{
+    height: 700px;
+    width: 600px;
+    border: 4px dashed black;
+}
+.red-box {
+    background-color: red;
+    position: absolute;
+    margin: 40px;
+    height: 200px;
+    width: 100px;
+    z-index: 0;
+    
+}
+.white-box{
+    background-color: white;
+    height: 200px;
+    width: 100px;
+    position: absolute;
+    margin: 60px;
+    border: 1px dashed black;
+    z-index: 3;
+ 
+}  
+.blue-box{
+    background-color: blue;
+    height: 200px;
+    width: 100px;
+    position: absolute;
+    margin: 80px;
+    z-index: 1;
+    
+}
+/* red white and blue box go over each other because theyre siblins */
+
+/* yellow box will not go over the white box because yellow box is a child of blue box */
+.yellow-box{
+    background-color: yellow;
+    height: 200px;
+    width: 100px;
+    position: absolute;
+    margin: 40px;
+    z-index: 10;
+
+}
+.black-box{
+    background-color: black;
+    height: 200px;
+    width: 100px;
+    position: absolute;
+    margin: 60px;
+    color: white;
+    z-index: 1;
+
+}
+.brown-box{
+    background-color: brown;
+    height: 200px;
+    width: 100px;
+    position: absolute;
+    margin: 80px;
+    z-index: 2;
+}
+/* phones*/
+@media screen and (max-width: 400px) {
+    .red-box {
+        background-color: royalblue;
+        height: 100px;
+        width: 50px;
+        margin: auto;
+
+        }
+    .white-box {
+        background-color: beige;
+        height: 100px;
+        width: 50px;
+        margin: 20px;
+
+    }
+    .blue-box {
+        background-color: burlywood;
+        height: 100px;
+        width: 50px;
+        margin: 40px;
+        z-index: 4;
+    }
+    .yellow-box{
+        background-color: cornflowerblue;
+        height: 100px;
+        width: 50px;
+        margin: auto;
+    }
+    .black-box{
+        background-color: cornsilk;
+        height: 100px;
+        width: 50px;
+        margin: 20px;
+    }
+    .brown-box{
+        background-color: coral;
+        height: 100px;
+        width: 50px;
+        margin: 40px;
+        z-index: 11;
+    }
+
+    .main-div {
+        height: 400px;
+        width: 250px;
+}
+}
+
